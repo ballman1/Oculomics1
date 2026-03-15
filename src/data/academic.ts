@@ -1,0 +1,63 @@
+import { AcademicCenter } from '../types/directory';
+
+export const academicData: AcademicCenter[] = [
+  {
+    id: '1',
+    slug: 'ucl-institute-ophthalmology',
+    name: 'Oculomics Research Group',
+    institution: 'UCL Institute of Ophthalmology',
+    country: 'United Kingdom',
+    shortDescription: 'One of the world\'s leading academic groups in oculomics, responsible for coining the term and producing landmark studies across cardiovascular and neurological applications.',
+    longDescription: 'The Oculomics Research Group at UCL Institute of Ophthalmology is one of the most prolific and cited academic groups in the field. Led by Prof. Pearse Keane and collaborators, the group has produced fundamental papers establishing the oculomics concept, large-scale UK Biobank analyses, and clinical translation studies.\n\nThe group has strong ties with Moorfields Eye Hospital NHS Foundation Trust and deep collaborations across DeepMind/Google Health, the Alan Turing Institute, and multiple NHS trusts. Their work spans cardiovascular, neurological, metabolic, and ophthalmic oculomics applications.',
+    researchFocus: ['Cardiovascular Oculomics', 'Neurological Biomarkers', 'AI in Ophthalmology', 'UK Biobank Studies', 'Clinical Translation'],
+    keyInvestigators: ['Prof. Pearse Keane', 'Prof. Adnan Tufail', 'Dr. Siegfried Wagner', 'Dr. Praveen Patel'],
+    activeStudies: ['OCULOMICS-1: Multi-condition AI screening RCT', 'NeuroRetina: OCT biomarkers for dementia risk'],
+    website: 'https://www.ucl.ac.uk/ioo',
+    is_published: true,
+  },
+  {
+    id: '2',
+    slug: 'doheny-eye-institute',
+    name: 'Retinal Imaging Research Laboratory',
+    institution: 'Doheny Eye Institute / UCLA',
+    country: 'United States',
+    shortDescription: 'Premier US academic retinal imaging research laboratory with leading programmes in OCTA-based biomarker development and diabetic macular disease.',
+    longDescription: 'The Retinal Imaging Research Laboratory at Doheny Eye Institute is one of the leading US centres for retinal imaging biomarker research. The group has pioneered OCTA applications in diabetic macular disease and age-related macular degeneration, with work that has translated into clinical practice guidelines.\n\nThe laboratory maintains the largest longitudinal OCTA database in North America and has ongoing collaborations with NVIDIA, Heidelberg Engineering, and multiple pharmaceutical companies on biomarker development for clinical trials.',
+    researchFocus: ['OCTA Biomarkers', 'Diabetic Macular Disease', 'AMD', 'Retinal Vasculature', 'Clinical Trial Endpoints'],
+    keyInvestigators: ['Prof. David Sarraf', 'Dr. Srinivas Sadda', 'Dr. Irena Tsui'],
+    activeStudies: ['OCTA-DM: OCTA endpoints in diabetic macular disease RCT', 'Doheny AMD Registry'],
+    website: 'https://www.doheny.org',
+    is_published: true,
+  },
+  {
+    id: '3',
+    slug: 'seri-singapore',
+    name: 'Singapore Eye Research Institute',
+    institution: 'Duke-NUS Medical School / SingHealth',
+    country: 'Singapore',
+    shortDescription: 'Asia\'s leading eye research institute, responsible for the Singapore Epidemiology of Eye Diseases study and major AI retinal imaging programmes.',
+    longDescription: 'The Singapore Eye Research Institute (SERI) is one of the world\'s most productive eye research institutes, with particular strength in population-based epidemiology and AI retinal imaging. SERI directs the landmark Singapore Epidemiology of Eye Diseases (SEED) study and the SYMPHONY study, which have provided foundational data on retinal disease burden in Asian populations.\n\nSERI has a strong AI and data science programme and close partnerships with A*STAR and Nanyang Technological University. Their work on ethnic differences in retinal vascular features and disease risk is internationally recognised.',
+    researchFocus: ['Population Epidemiology', 'Asian Retinal Disease', 'AI Retinal Imaging', 'Diabetic Retinopathy', 'Myopia'],
+    keyInvestigators: ['Prof. Tien Yin Wong', 'Prof. Ching-Yu Cheng', 'Assoc. Prof. Daniel Ting'],
+    activeStudies: ['SEED III: Singapore Epidemiology of Eye Diseases cohort update', 'SMART: AI screening in Singapore primary care'],
+    website: 'https://www.seri.com.sg',
+    is_published: true,
+  },
+  {
+    id: '4',
+    slug: 'cera-melbourne',
+    name: 'Oculomics & AI Programme',
+    institution: 'Centre for Eye Research Australia (CERA)',
+    country: 'Australia',
+    shortDescription: 'Leading Australian academic eye research centre with major programmes in retinal AI, cardiovascular oculomics, and Aboriginal and Torres Strait Islander eye health.',
+    longDescription: 'The Centre for Eye Research Australia (CERA) is Australia\'s largest eye research institute and a world leader in retinal vascular biology and AI applications in ophthalmology. Their oculomics programme focuses on cardiovascular risk prediction, with landmark work using UK Biobank and Melbourne Collaborative Cohort Study data.\n\nCERA is a national leader in addressing Indigenous Australian eye health disparities and is developing oculomics applications appropriate for remote and rural screening contexts.',
+    researchFocus: ['Cardiovascular Oculomics', 'Retinal Vascular Biology', 'AI Screening', 'Indigenous Eye Health', 'Remote Screening'],
+    keyInvestigators: ['Prof. Robyn Guymer', 'Prof. Paul Baird', 'Dr. Zhichao Wu'],
+    activeStudies: ['CERA-CVD: Retinal biomarkers for cardiovascular prevention', 'Indigenous Retinal Screening Network'],
+    website: 'https://www.cera.org.au',
+    is_published: true,
+  },
+];
+
+export const academicCountryOptions = ['All', 'United Kingdom', 'United States', 'Singapore', 'Australia', 'Netherlands', 'Germany', 'Sweden'];
+export const academicFocusOptions = ['All', 'Cardiovascular', 'Neurological', 'Diabetic Retinopathy', 'AMD', 'AI/Deep Learning', 'OCTA', 'Epidemiology'];

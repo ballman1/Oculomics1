@@ -1,0 +1,66 @@
+import { NewsItem } from '../types';
+
+export const newsItems: NewsItem[] = [
+  {
+    id: '1',
+    title: 'AI Retinal Screening Detects Cardiovascular Risk with 78% Accuracy in Large Multicenter Trial',
+    excerpt: 'A landmark multicenter study published in Nature Medicine demonstrates that deep learning analysis of fundus photographs can identify patients at elevated 10-year cardiovascular risk, potentially enabling population-scale screening.',
+    category: 'Research',
+    date: 'March 10, 2026',
+    author: 'Editorial Team',
+    imageUrl: 'https://images.pexels.com/photos/5752287/pexels-photo-5752287.jpeg',
+    tags: ['AI', 'Cardiovascular', 'Screening', 'Deep Learning'],
+  },
+  {
+    id: '2',
+    title: 'Retina Analytics Closes $42M Series B to Expand Oculomics Platform',
+    excerpt: 'San Francisco-based Retina Analytics has secured $42 million in Series B funding led by Andreessen Horowitz Bio, with participation from General Catalyst. The company plans to accelerate clinical validation and expand into three new therapeutic areas.',
+    category: 'Funding',
+    date: 'March 7, 2026',
+    author: 'Editorial Team',
+    imageUrl: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg',
+    tags: ['Funding', 'Startup', 'Venture Capital'],
+  },
+  {
+    id: '3',
+    title: 'FDA Clears First AI-Based Retinal Biomarker Tool for Diabetic Neuropathy Risk Stratification',
+    excerpt: 'The U.S. Food and Drug Administration has granted 510(k) clearance to NeuroRetina Dx for its automated retinal nerve fiber layer analysis system, marking a milestone for oculomics as a clinical category.',
+    category: 'Regulation',
+    date: 'February 28, 2026',
+    author: 'Editorial Team',
+    imageUrl: 'https://images.pexels.com/photos/4226263/pexels-photo-4226263.jpeg',
+    tags: ['FDA', 'Regulation', 'Clearance', 'Neuropathy'],
+  },
+  {
+    id: '4',
+    title: 'EyeBiomarker Consortium Launches 50,000-Patient Registry to Standardize Retinal Aging Markers',
+    excerpt: 'A consortium of 18 academic medical centers has launched a prospective registry to standardize the measurement and reporting of retinal aging biomarkers, addressing a critical gap in the field\'s reproducibility.',
+    category: 'Partnership',
+    date: 'February 20, 2026',
+    author: 'Editorial Team',
+    imageUrl: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg',
+    tags: ['Registry', 'Consortium', 'Standardization', 'Aging'],
+  },
+  {
+    id: '5',
+    title: 'Retinal Vasculature as a Window to Neurodegeneration: New Findings in Early Alzheimer\'s Detection',
+    excerpt: 'Researchers at University College London report that subtle changes in retinal capillary density and vessel caliber may precede clinical Alzheimer\'s symptoms by up to seven years, opening new possibilities for preclinical detection.',
+    category: 'Research',
+    date: 'February 14, 2026',
+    author: 'Editorial Team',
+    imageUrl: 'https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg',
+    tags: ["Alzheimer's", 'Neurodegeneration', 'Biomarkers', 'Preclinical'],
+  },
+  {
+    id: '6',
+    title: 'Global Oculomics Summit 2026 Announces Program: 60 Speakers, 12 Countries',
+    excerpt: 'The third annual Global Oculomics Summit will convene in London this September, bringing together clinicians, data scientists, regulators, and industry leaders to address clinical translation, reimbursement pathways, and equitable access.',
+    category: 'Events',
+    date: 'February 9, 2026',
+    author: 'Editorial Team',
+    imageUrl: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg',
+    tags: ['Conference', 'Events', 'Summit', 'Industry'],
+  },
+];
+
+export const newsCategories = ['All', 'Research', 'Funding', 'Product Launch', 'Regulation', 'Partnership', 'Events'];
