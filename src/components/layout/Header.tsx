@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Eye, Menu, X, ChevronDown, Search } from 'lucide-react';
+import { Menu, X, ChevronDown, Search } from 'lucide-react';
 import GlobalSearch from '../ui/GlobalSearch';
+import ocularSignalsLogo from '../../../ocularsignals-image.png';
 
 const navItems = [
   { label: 'Learn', children: [
@@ -61,11 +62,12 @@ export default function Header() {
       <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled || mobileOpen ? 'bg-white shadow-sm border-b border-slate-100' : 'bg-white/90 backdrop-blur-md border-b border-white/10'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <Link to="/" className="flex items-center gap-2.5 flex-shrink-0">
-              <div className="w-8 h-8 bg-[#0c2340] rounded-lg flex items-center justify-center">
-                <Eye className="text-teal-400" size={18} />
-              </div>
-              <span className="font-bold text-[#0c2340] text-lg tracking-tight">Oculomics<span className="text-teal-500">Hub</span></span>
+            <Link to="/" className="flex items-center flex-shrink-0" aria-label="Ocular Signals home">
+              <img
+                src={ocularSignalsLogo}
+                alt="Ocular Signals"
+                className="h-10 w-auto max-w-[210px] object-contain"
+              />
             </Link>
 
             <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
