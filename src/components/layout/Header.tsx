@@ -61,12 +61,12 @@ export default function Header() {
       <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
       <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled || mobileOpen ? 'bg-white shadow-sm border-b border-slate-100' : 'bg-white/90 backdrop-blur-md border-b border-white/10'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20 sm:h-24">
             <Link to="/" className="flex items-center flex-shrink-0" aria-label="Ocular Signals home">
               <img
                 src={ocularSignalsLogo}
                 alt="Ocular Signals"
-                className="h-10 w-auto max-w-[210px] object-contain"
+                className="h-14 sm:h-20 w-auto max-w-[260px] sm:max-w-[420px] object-contain bg-transparent mix-blend-multiply"
               />
             </Link>
 
